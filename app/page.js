@@ -2,6 +2,8 @@ import React from 'react'
 import { Button } from '@/components/ui/button';
 import Head from 'next/head';
 import Contect from './_components/Contect';
+import HomeNavBar from './HomeNavBar'
+
 import { 
   Lightbulb, 
   Target, 
@@ -31,20 +33,7 @@ const page = () => {
               <Rocket className="text-teal-600 mr-3" size={36} />
               <h1 className="text-3xl font-bold text-teal-800">Interview AI</h1>
             </div>
-            <nav className="flex space-x-6 items-center">
-              <a href="#features" className="group relative text-gray-700 hover:text-teal-600 transition-all">
-                Features
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all"></span>
-              </a>
-              <a href="#testimonials" className="group relative text-gray-700 hover:text-teal-600 transition-all">
-                Stories
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all"></span>
-              </a>
-              <a href="#contact" className="group relative text-gray-700 hover:text-teal-600 transition-all">
-                Connect
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-teal-600 group-hover:w-full transition-all"></span>
-              </a>
-            </nav>
+            <HomeNavBar></HomeNavBar>
           </div>
         </header>
                 <section id="features" className="py-16 bg-[#1E293B] px-6 md:px-0">
